@@ -50,8 +50,8 @@ python3.9 cli.py 'minio-movies'
 ### verify apache kafka events
 ```sh
 # set variables to read events
-BROKER_IP=40.65.243.238:9094
-SCHEMA_REGISTRY=http://http://52.232.224.64:8081
+BROKER_IP=[IP]:9094
+SCHEMA_REGISTRY=http://[IP]:8081
 
 # apache kafka
 kafkacat -C -b $BROKER_IP -t src-app-users-json -J -o end
@@ -84,7 +84,7 @@ docker run ingestion-data-stores python3.9 cli.py
 
 ### deploy app into k8s
 ```sh
-# get cluster context 
+# get cluster context
 kubectx aks-owshq-dev
 
 # cron jobs deployment

@@ -1,20 +1,20 @@
 ```shell
 #  microsoft azure
 # https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
-az account set --subscription 495322cb-95ae-4e66-b31d-1ea25d0b4ada
+az account set --subscription []
 az aks get-credentials --resource-group k8s-aks-owshq-dev --name aks-owshq-dev
 
 # google gcp
 # https://cloud.google.com/sdk/gcloud
-gcloud container clusters get-credentials silver-charmer-243611-gke --region us-central1
+gcloud container clusters get-credentials [] --region us-central1
 
 # digital ocean
 # https://docs.digitalocean.com/reference/doctl/how-to/install/
-doctl kubernetes cluster kubeconfig save 69aa8706-603d-46a4-8804-def3733675c0
+doctl kubernetes cluster kubeconfig save []
 
 # linode
 # https://www.linode.com/docs/guides/linode-cli/
-cluster_id=44470
+cluster_id=[]
 linode-cli lke clusters-list
 linode-cli lke kubeconfig-view $cluster_id
 
